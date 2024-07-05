@@ -1,0 +1,239 @@
+@media(min-width:2560px){
+    .home-section-ring{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: baseline;
+        /**ADD TOP POSITION  CHANGE SIZE*/
+        top: 25%;
+    }
+
+}
+
+
+@media(max-width: 1440px){
+    .home-wrap-center-image img{
+        border-top-left-radius: 200px;
+        border-top-right-radius: 200px;
+        /***CHANGE SIZE TO FIR SCREEN***/
+        width: 300px;
+        height: 400px;
+        z-index: 200;
+    }
+}
+
+
+@media(max-width:1024px){
+
+.polish-img img{
+    /**CHANGE IMAGE SIZE*/
+    margin-right: 0px;
+    margin-left: 35px;
+    width: 100px;
+    height: 170px;
+}
+
+.flex-product-items{
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    padding: 0 30px 0 30px;
+}
+
+
+.polish-img>div:first-child{
+    display: flex;
+    justify-content: center;
+}
+
+.polish-name h3{
+    margin-left: 10px;
+}
+
+
+}
+
+@media(max-width:768px){
+    /**CHANGE GRID **/
+    .home-grid-wrap{
+        width: 100%;
+        height: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+
+    .home-wrap-center-image img{
+        border-top-left-radius: 200px;
+        border-top-right-radius: 200px;
+        /***SET TO DISPLAY NONE**/
+        display: none;
+    }
+
+    .right-nav{
+        /***REMOVE NAV LINKS SET DISPLAY NONE **/
+        display: none;
+    }
+
+    .navbar .left-nav img{
+        /**CHANGE LOGO SIZE***/
+        width: 200px;
+    }
+
+
+    .glitter-image img{
+        animation: spin 100s;
+        animation-iteration-count: infinite;
+        animation-fill-mode: forwards;
+        /***CHANGE SIZE***/
+        min-width: 230px;
+        height: 300px;
+        margin-top: 50px;
+    }
+
+    .z-index-300 img{
+        animation: bounce 3s ease-in-out;
+        animation-iteration-count: infinite;
+        animation-fill-mode: forwards;
+        /***CHANGE SIZE***/
+        width: 350px;
+        height: 200px;
+        margin-top: 100px;
+    }
+
+
+    .home-section-ring img{
+        animation: spin 100s ease-out;
+        animation-iteration-count: infinite;
+        animation-fill-mode: forwards;
+        /***CHANGE SIZE****/
+        min-width: 130px;
+        height: 200px;
+        margin-top: 100px;
+    }
+
+    /***SET MENUBAR ACTIVE***/
+    .menu-bar{
+        display: inline-block;
+    }
+
+    /**SET DRODOWON MENU TO ACTIVE**/
+    .dropdown-menu{
+        display: flex;
+    }
+
+    .z-index-300 p{
+       margin-bottom: 20px;
+    }
+
+    /***CHANGE BOOK FROM TO GRID***/
+    .book-section-wrap{
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 3fr;
+    }
+
+
+    .book-el-btn{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 30px;
+    }
+
+
+    .care img{
+        width: 60px;
+        height: 60px;
+    }
+
+
+    .care-context>div{
+        height: 60px;
+        margin: 20px;
+        text-align: center;
+        color: var(--greyshade);
+    }
+
+
+    .nail-care-wrap{
+        /** CENTER *WRAP ITEMS ***/ 
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+
+    .about-us-grid{
+        /***CHANGE IMAGE TO FILL SIZE :FIT CONTENT***/
+        height: fit-content;
+        display: grid;
+        grid-template-columns:1fr;
+        grid-template-rows:1fr 1fr;
+    }
+    
+}
+
+
+@media(max-width:425px){
+    .story{
+        background-color: var(--lightershade);
+        width: 100vw;
+        /***REDUCE PADDING***/
+        padding: 5px;
+    }
+
+    .flex-product-items{
+        width: 100vw;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        justify-content: center;
+        padding: 0 30px 0 30px;
+    }
+
+    .polish-img img{
+        /**CHANGE IMAGE SIZE*/
+        margin-right: 60px;
+        width: fit-content;
+        height: fit-content;
+    }
+}
+
+
+
+
+@media(max-width:375px){
+    .navbar .left-nav img{
+        /**CHANGE LOGO SIZE***/
+        width: 150px;
+
+    }
+
+       /***CHANGE BOOK FROM TO GRID***/
+       .book-section-wrap{
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 4fr;
+    }
+}
+
+
+
+
+@media(max-width:320px){
+    .z-index-300 img{
+        animation: bounce 3s ease-in-out;
+        animation-iteration-count: infinite;
+        animation-fill-mode: forwards;
+        /***CHANGE SIZE***/
+        width: 330px;
+        height: 230px;
+    }
+}
