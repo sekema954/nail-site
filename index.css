@@ -451,6 +451,7 @@ html{
 }
 
 
+<<<<<<< Updated upstream
 
 
 /***PRICES AND TREATMENT***/
@@ -953,3 +954,13 @@ ul{
     width: 100%;
 }
 }
+=======
+.polish-img img{
+    margin-right: 35px;
+}
+
+.polish-img>div:first-child{
+    display: flex;
+    justify-content: center;
+}
+>>>>>>> Stashed changes
