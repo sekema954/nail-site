@@ -230,6 +230,14 @@ html{
     transform: translate(0, -10px) rotate(45deg);
 }
 
+.dropdown-links{
+    display: none;
+}
+
+.dropdown-links-active{
+    display: inline-block;
+}
+
 .right-nav ul li{
     list-style: none;
     display: inline-block;
@@ -440,4 +448,508 @@ html{
     justify-content: center;
     color: white;
     padding: 20px;
+}
+
+
+
+
+/***PRICES AND TREATMENT***/
+.prices{
+    min-height: 100vh;
+    width: 100vw;
+    background-color: var(--lightershade);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .price-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 15px;
+  }
+
+
+
+  
+  .price-grid1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+
+  .price-grid2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .price-grid2 img{
+    width: 100%;
+    height: 100%;
+  }
+
+
+
+  .price-header{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: var(--darkbrown);
+    padding: 30px;
+  }
+  
+  .service-amt{
+  
+    font-weight: 500;
+  }
+
+  .service span {
+    color: var(--greyshade);
+  }
+  
+  .service{
+    margin: 40px;
+  }
+  
+  
+  .price-dots{
+    position: absolute;
+  }
+
+
+  .justify-center-button{
+    padding-left: 30px;
+  }
+
+
+
+
+
+
+
+
+  /***ANGRY GRID***/
+  .angry-grid {
+    display: grid; 
+ 
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    
+    gap: 25px;
+    height: 100%;
+    
+ }
+   
+ #item-0 {
+    background: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url(images/grid1.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+ 
+    grid-row-start: 1;
+    grid-column-start: 1;
+ 
+    grid-row-end: 3;
+    grid-column-end: 2;
+    position: relative;
+    
+ }
+ #item-1 {
+    background: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url(images/grid2.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+ 
+    background-color: #DEB5FB; 
+    grid-row-start: 1;
+    grid-column-start: 2;
+ 
+    grid-row-end: 2;
+    grid-column-end: 3;
+    position: relative;
+
+    
+ }
+ #item-2 {
+    background: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url(images/grid3.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+ 
+    background-color: #7CBAD6; 
+    grid-row-start: 1;
+    grid-column-start: 3;
+ 
+    grid-row-end: 2;
+    grid-column-end: 4;
+    position: relative;
+
+    
+ }
+ #item-3 {
+    background: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url(images/grid4.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+ 
+    background-color: #A5DE57; 
+    grid-row-start: 2;
+    grid-column-start: 2;
+ 
+    grid-row-end: 3;
+    grid-column-end: 3;
+    position: relative;
+
+    
+ }
+ #item-4 {
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.1)), url(images/grid5.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+ 
+    background-color: #DC5CF8; 
+    grid-row-start: 2;
+    grid-column-start: 3;
+ 
+    grid-row-end: 3;
+    grid-column-end: 4;
+    position: relative;
+
+} 
+
+
+.advertise{
+    width: 100vw;
+    height: 100vh;
+    padding: 5% 10% 5% 10%;
+    background-color: var(--lightershade);
+}
+
+.advertise-header{
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    color: var(--darkbrown);
+}
+
+
+
+
+#item-0 .grid-content{
+    position: absolute;
+    bottom: 10%;
+    left: 40%;
+  }
+  
+  #item-0 .grid-content>div{
+    margin: 20px;
+    color: white;
+  }
+
+
+  .advertise .center-item{
+    color: white;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+
+
+  /***news and refined trends***/
+
+  section{
+    background-color: var(--lightershade);
+  }
+
+
+  .news-header{
+    color: var(--dark-brown);
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .news-grid-wrap{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .news-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 400px;
+  }
+  
+  
+  .news-grid1-image img{
+    width: 100%;
+    height: 100%;
+  }
+  
+  .flex-link{
+    display: flex;
+    cursor: pointer;
+    transition: all .50s;
+  }
+  
+  .flex-link:hover{
+    color: var(--dark-brown);
+  }
+  
+  .flex-link p, .flex-link img{
+    margin: 10px;
+  }
+  
+  
+  .grid-context>div{
+    margin: 20px;
+  }
+  
+  .grid-context div:first-child{
+    color: #767676;
+  }
+
+
+
+
+
+
+ /* Base styles for the follow-us section */
+.follow-us {
+    position: relative;
+    text-align: center; /* Center align content */
+  }
+  
+  /* Styling for the follow-grid */
+  .follow-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); /* Responsive grid with minimum width */
+    gap: 10px; /* Adjust the gap between grid items */
+    padding: 0 10px; /* Adjust padding */
+  }
+  
+  .follow-grid img {
+    max-width: 100%; /* Ensure images resize fluidly within their containers */
+    height: auto; /* Maintain aspect ratio */
+  }
+  
+  /* Styling for the follow-card */
+  .follow-card {
+    position: relative;
+    max-width: 100%; /* Ensure the card adjusts to its container */
+    height: auto; /* Allow height to adjust based on content */
+    background-color: var(--lightershade);
+    text-align: center; /* Center align content */
+    padding: 20px; /* Adjust padding */
+  }
+  
+  .instagram-icon {
+    margin-bottom: 10px; /* Add space below the Instagram icon */
+  }
+  
+  .follow-card-wrap h1 {
+    color: var(--dark-brown);
+    margin-top: 0; /* Remove default margin */
+    font-size: 1.5rem; /* Adjust font size */
+  }
+  
+  /* Media queries for responsiveness */
+  @media (max-width: 768px) {
+    .follow-grid {
+      grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); /* Adjust grid for smaller screens */
+      gap: 5px; /* Adjust gap for smaller screens */
+      padding: 0 5px; /* Adjust padding for smaller screens */
+    }
+  
+    .follow-card {
+      width: 100%; /* Ensure card takes full width */
+      max-width: 100%; /* Ensure card adjusts to smaller screens */
+      padding: 15px; /* Adjust padding for smaller screens */
+    }
+  }
+
+
+
+  /***SUBSCRIBE CONTACT US**/
+
+  .contact-wrapper{
+    min-height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+  .contact-header{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+  
+
+  .contact-header h1{
+    color: var(--darkbrown);
+  }
+
+  .contact-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+  }
+  
+  
+  .contact-img img{
+    border-top-left-radius: 300px;
+    border-bottom-left-radius: 300px;
+  }
+  
+  .contact-context{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  
+  .contact-context-wrap>div{
+    margin: 20px;
+  }
+  
+  .email-input{
+    display: flex;
+  }
+  
+  .subscribe-form>div{
+    margin: 10px;
+  }
+  
+  .subscribe-form input{
+    width: 100%;
+    height: 35px;
+    border: none;
+    padding: 15px;
+    background-color: transparent;
+  }
+  
+  .subscribe-form input:focus{
+    outline: none;
+  }
+  
+  .email-input button{
+    border: none;
+    background-color: transparent;
+    margin-left: 30px;
+    cursor: pointer;
+  }
+  
+  .email-input{
+    border-bottom: solid 1px;
+  }
+  
+  .phone-number h3{
+    display: flex;
+    justify-content: center;
+  }
+
+
+  .subscribe-btn{
+    color: var(--darkbrown);
+  }
+
+
+
+  /***FOOTER***/
+
+  .row{
+	display: flex;
+	flex-wrap: wrap;
+}
+ul{
+	list-style: none;
+}
+
+
+.footer{
+	background-color: var(--darkbrown);
+    padding: 70px;
+}
+.footer-col{
+   width: 25%;
+   padding: 0 15px;
+}
+.footer-col h4{
+	font-size: 18px;
+	color: black;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: #e91e63;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+.footer-col ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+	color: black;
+	text-decoration: none;
+	font-weight: 300;
+	color: black;
+	display: block;
+	transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+	color: var(--buttonhover);
+	padding-left: 8px;
+}
+.footer-col .social-links a{
+	display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+	height: 40px;
+	width: 40px;
+	background-color: var(--lightershade);
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: black;
+	transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+	background-color: var(--greyshade);
+    color: white;
+}
+
+
+/*responsive*/
+@media(max-width: 767px){
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+}
+}
+@media(max-width: 574px){
+  .footer-col{
+    width: 100%;
+}
 }
