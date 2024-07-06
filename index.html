@@ -24,7 +24,7 @@
                         <li><a href="#about">About</a></li>
                         <li><a href="#products">Products</a></li>
                         <li><a href="#contact">Contact</a></li>
-                        <a href="#book">
+                        <a href="#book-section">
                             <button class="book-btn">Book</button>
                         </a>
                     </ul>
@@ -41,7 +41,7 @@
         </div>
         
        
-        <div class="home-grid-wrap">
+        <div class="home-grid-wrap" id="home">
             <div class="home-wrap-center-image">
                 <div class="dropdown-menu">
                     <ul class="dropdown-links">
@@ -49,7 +49,7 @@
                         <li><a href="#about">About</a></li>
                         <li><a href="#products">Products</a></li>
                         <li><a href="#contact">Contact</a></li>
-                        <a href="#book">
+                        <a href="#book-section">
                             <button class="book-btn">Book</button>
                         </a>
                     </ul>
@@ -84,58 +84,66 @@
         </div>
     </section>
     <!----SECTION BOOK PAGE-->
-    <section class="book-section">
-        <form class="book-section-wrap">
-            <!---CHECK IN-->
+    <section class="book-section" id="book-section">
+        <form class="book-section-wrap" method="POST" id="form">
+            <input type="hidden" name="access_key" value="246f2fc0-e392-46a0-8dca-29ed4a8c6bf1">
+            <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+            
+            <!-- CHECK IN -->
             <div class="check-in book-context">
                 <div class="calendar-icon book-icon-wrap">
-                    <img src="images/calendar4-frame.png">
-                    <P>CHECK IN</P>
+                    <img src="images/calendar4-frame.png" alt="Calendar Icon">
+                    <p>CHECK IN</p>
                 </div>
                 <div class="check-in-input input-el">
-                    <input type="date" name="" id="">
+                    <input type="date" name="check-in" id="check-in" required>
                 </div>
             </div>
-
-            <!---CHECK OUT-->
+        
+            <!-- CHECK OUT -->
             <div class="check-out book-context">
                 <div class="calendar-icon book-icon-wrap">
-                    <img src="images/calendar4-frame.png">
-                    <P>CHECK OUT</P>
+                    <img src="images/calendar4-frame.png" alt="Calendar Icon">
+                    <p>CHECK OUT</p>
                 </div>
                 <div class="check-out-input input-el">
-                    <input type="date" name="" id="">
+                    <input type="date" name="check-out" id="check-out" required>
                 </div>
             </div>
-
-            <!---GUESTS-->
+        
+            <!-- GUESTS -->
             <div class="guests book-context">
-                <div class="guests book-icon-wrap">
-                    <img src="images/person.png">
-                    <P>GUESTS</P>
+                <div class="guests-icon book-icon-wrap">
+                    <img src="images/person.png" alt="Guests Icon">
+                    <p>GUESTS</p>
                 </div>
                 <div class="guests-input input-el">
-                    <input type="text" name="" id="" value="1 Adult">
+                    <input type="number" name="guests" id="guests" value="1" min="1" required>
                 </div>
             </div>
-
-            <!---ACCOMODATIONS--->
-            <div class="accomodations book-context">
-                <div class="accomodation book-icon-wrap">
-                    <img src="images/tents.png">
-                    <P>ACCOMODATION</P>
+        
+            <!-- ACCOMMODATIONS -->
+            <div class="accommodations book-context">
+                <div class="accommodation-icon book-icon-wrap">
+                    <img src="images/tents.png" alt="Accommodation Icon">
+                    <p>ACCOMMODATION</p>
                 </div>
-                <div class="accomodations-input input-el">
-                    <select name="" id="">
-                        <option value="">Tent</option>
+                <div class="accommodations-input input-el">
+                    <select name="accommodation" id="accommodation" required>
+                        <option value="">Select Accommodation</option>
+                        <option value="Tent">Tent</option>
+                        <option value="Cabin">Cabin</option>
+                        <!-- Add more options as needed -->
                     </select>
                 </div>
             </div>
-            <!---BOOK BUTTON-->
+        
+            <!-- BOOK BUTTON -->
             <div class="book-el-btn">
-                <button  class="book-btn">BOOK</button>
+                <button type="submit" class="book-btn">BOOK</button>
             </div>
         </form>
+        
     </section>
 
     <!----flex nail care section-->
@@ -188,7 +196,7 @@
    
 
     <!---about us sections-->
-    <section class="story">
+    <section class="story" id="about">
         <div class="about-us-grid">
             <div class="about-grid-image"></div>
             <div class="story-context">
@@ -333,7 +341,7 @@
 
     <!----ANGRY GRID Our Nail Products-->
 
-      <section class="advertise">
+      <section class="advertise" id="products">
         <div class="advertise-header">
             <h1>Our Nail Products</h1>
         </div>
@@ -396,8 +404,9 @@
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam<br></br> varius quis ligula id placerat. Duis urna magna, vestibulum in<br></br> lacinia condimentum, ultrices ut justo.</p>
                   </div>
                   <div class='flex-link'>
-                    <p>READ MORE</p>
-                    <img src='images/arrow-right.png' alt='icon'></img>
+                    <a href = '#'>
+                        READ MORE
+                    </a>                    <img src='images/arrow-right.png' alt='icon'></img>
                   </div>
                 </div>
               </div>
@@ -417,7 +426,9 @@
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam<br></br> varius quis ligula id placerat. Duis urna magna, vestibulum in<br></br> lacinia condimentum, ultrices ut justo.</p>
                   </div>
                   <div class='flex-link'>
-                    <p>READ MORE</p>
+                    <a href = '#'>
+                        READ MORE
+                    </a>
                     <img src='images/arrow-right.png' alt='icon'></img>
                   </div>
                 </div>
@@ -483,7 +494,7 @@
 
 
       <!----subscribe form-->
-      <section class='contact-wrapper' id='Contact'>
+      <section class='contact-wrapper' id='contact'>
         <div class='contact'>
           <div class='contact-grid'>
             <div class='contact-img'>
