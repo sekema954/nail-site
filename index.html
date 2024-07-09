@@ -85,18 +85,18 @@
     </section>
     <!----SECTION BOOK PAGE-->
     <section class="book-section" id="book-section">
-        <form class="book-section-wrap" method="POST" id="form">
-            <input type="hidden" name="access_key" value="246f2fc0-e392-46a0-8dca-29ed4a8c6bf1">
+        <form action="https://api.web3forms.com/submit" class="book-section-wrap" method="POST" id="form">
+            <input type="hidden" name="access_key" value="ead77d98-db96-4573-8d49-cb3095684216">
             <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
             
             <!-- CHECK IN -->
             <div class="check-in book-context">
                 <div class="calendar-icon book-icon-wrap">
                     <img src="images/calendar4-frame.png" alt="Calendar Icon">
-                    <p>CHECK IN</p>
+                    <p>DATE</p>
                 </div>
                 <div class="check-in-input input-el">
-                    <input type="date" name="check-in" id="check-in" required>
+                    <input type="date" name="appointment-date" id="check-in" required>
                 </div>
             </div>
         
@@ -104,10 +104,10 @@
             <div class="check-out book-context">
                 <div class="calendar-icon book-icon-wrap">
                     <img src="images/calendar4-frame.png" alt="Calendar Icon">
-                    <p>CHECK OUT</p>
+                    <p>TIME</p>
                 </div>
                 <div class="check-out-input input-el">
-                    <input type="date" name="check-out" id="check-out" required>
+                    <input type="time" name="appointment-time" id="check-out" required>
                 </div>
             </div>
         
@@ -115,10 +115,10 @@
             <div class="guests book-context">
                 <div class="guests-icon book-icon-wrap">
                     <img src="images/person.png" alt="Guests Icon">
-                    <p>GUESTS</p>
+                    <p>NAME</p>
                 </div>
                 <div class="guests-input input-el">
-                    <input type="number" name="guests" id="guests" value="1" min="1" required>
+                    <input type="text" name="guest-name" id="guests" placeholder="Enter Name" required>
                 </div>
             </div>
         
@@ -126,13 +126,13 @@
             <div class="accommodations book-context">
                 <div class="accommodation-icon book-icon-wrap">
                     <img src="images/tents.png" alt="Accommodation Icon">
-                    <p>ACCOMMODATION</p>
+                    <p>SERVICE</p>
                 </div>
                 <div class="accommodations-input input-el">
                     <select name="accommodation" id="accommodation" required>
-                        <option value="">Select Accommodation</option>
-                        <option value="Tent">Tent</option>
-                        <option value="Cabin">Cabin</option>
+                        <option value="">Select Service</option>
+                        <option value="manicure">Manicure</option>
+                        <option value="pedicure">Pedicure</option>
                         <!-- Add more options as needed -->
                     </select>
                 </div>
@@ -355,7 +355,9 @@
                       <h1>FILL WITH POLISH</h1>
                     </div>
                     <div class=''>
-                      <button class='book-btn'>Book</button>
+                      <a href="#book-section">
+                        <button class='book-btn'>Book</button>
+                      </a>
                     </div>
                   </div>
             </div>
@@ -510,9 +512,12 @@
                   <h3>(123) 675 5656</h3>
                 </div>
                 <div class=''>
-                  <form action='' class='subscribe-form'>
+                  <form action='https://api.web3forms.com/submit' method="POST" class='subscribe-form'>
+                    <input type="hidden" name="access_key" value="ead77d98-db96-4573-8d49-cb3095684216">
                     <div class='email-input'>
-                      <input type='email' placeholder='Enter Email Address'></input>
+                      <input type='email' name="user-email" placeholder='Enter Email Address' required></input>
+                      <!---spam protection-->
+                      <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
                       <button class="subscribe-btn" type='submit'>SUBSCRIBE</button>
                     </div>
                     
@@ -548,15 +553,7 @@
                         <li><a href="mailto:evercures@mail.ocm">Email</a></li>
                     </ul>
                 </div>
-                <div class="footer-col">
-                    <h4>online shop</h4>
-                    <ul>
-                        <li><a href="#">Living</a></li>
-                        <li><a href="#">Dining</a></li>
-                        <li><a href="#">Bedroom</a></li>
-                        <li><a href="#">Kitchen</a></li>
-                    </ul>
-                </div>
+               
                 <div class="footer-col">
                     <h4>follow us</h4>
                     <div class="social-links">
