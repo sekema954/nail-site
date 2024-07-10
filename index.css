@@ -176,7 +176,7 @@ html{
     align-items: center;
     transition: all .50s;
     z-index: 900;
-    position: absolute;
+    position: fixed;
     top: 0;
     display: none;
 }
