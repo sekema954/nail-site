@@ -159,7 +159,7 @@ html{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px
+  padding: 15px
 }
 
 
@@ -172,8 +172,7 @@ html{
 
 .navbar-fixed-position{
     position: fixed;
-    background-color: var(--darkbrown);
-    border-bottom: solid black 1px;
+    background-color: whitesmoke;
 }
 .dropdown-menu{
     width:100%;
@@ -366,6 +365,7 @@ html{
 
 .nail-care{
     width: 100vw;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-content: center;
